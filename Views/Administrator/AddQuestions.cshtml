@@ -11,6 +11,22 @@
             <!--Sanchitha Guptha's Task is to desing the page for respected function -->
             <!--In this Page the admin should be able to enter the MCQ question-->
             <h2 style="text-align:center">Add Question Here!!!!!</h2>
+            <div>
+            @using (Html.BeginForm("PostAddQuestion", "Administrator"))
+            {
+                <label>Add Question</label><br />
+                <input type="text" name="question_description" /><br/>
+                <label>Option A</label><br />
+                <input type="text" name="OptionA" /><br />
+                <label>Option B</label><br />
+                <input type="text" name="OptionB" /><br />
+                <label>Option C</label><br />
+                <input type="text" name="OptionC" /><br />
+                <label>Option D</label><br />
+                <input type="text" name="OptionD" /><br />
+                <input type="submit" name="ADD" value="Add Question" />   
+            }
+            </div>
         </div>
     </body>
 </html>

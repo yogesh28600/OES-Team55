@@ -4,7 +4,13 @@ namespace OnlineExamSystem.Controllers
 {
     public class AdministratorController : Controller
     {
-      public IActionResult AddQuestions()
+        [HttpPost]
+        public string PostAddQuestion(string question_description, string OptionA, string OptionB, string OptionC, string OptionD)
+        {
+            return "Question:"+question_description + "\n" +"A: "+ OptionA + "\n"+ "B: "+OptionB + "\n" +"C: "+OptionC + "\n" + "D: "+OptionD;
+        }
+
+        public IActionResult AddQuestions()
         {
             return View();
         }

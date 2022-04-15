@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxNb2RpZnlRdWVzdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/PostAddQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxQb3N0QWRkUXVlc3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/SearchExamInfo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxTZWFyY2hFeGFtSW5mby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +49,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/ViewQuestionPaper.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxWaWV3UXVlc3Rpb25QYXBlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Home/Student.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Shared/_Layout.cshtml]
