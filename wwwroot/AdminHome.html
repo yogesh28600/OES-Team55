@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online Exam System</title>
+    <style>
+        body {
+            background-color: rgb(204, 212, 179);
+            margin: 0;
+            padding: 0;
+        }
+
+        .Header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        h1 {
+            width: 100%;
+            background-color: rgb(180, 185, 167);
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+            h1.Logo {
+                text-align: center;
+            }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: rgb(27, 172, 240);
+                }
+
+        .active {
+            background-color: #0ec582;
+        }
+
+        .content {
+            display: block;
+            margin-top: 120px;
+            margin-bottom: 110px;
+        }
+
+        .Footer {
+            background-color: rgb(180, 185, 167);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .Copyrights {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="LogoDiv">
+            <h1 class="Logo">Online Exam System</h1>
+        </div>
+        <div class="Menu">
+            <p>ladjkhkjasdhkjykajnaka hjhjkhkajyhdyuasjkh yiusaujhduy uiaysduahkuh iuashdiyasiu ausdhuiad</p>
+        </div>
+    </div>
+    <div class="content">
+       @RenderBody()
+    </div>
+    <div class="Footer">
+        <h6 class="Copyrights" style="text-align: center;font-size: large;">@copyrights-2022</h6>
+    </div>
+</body>
+</html>

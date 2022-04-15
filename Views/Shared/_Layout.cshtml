@@ -1,0 +1,104 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>OES</title>
+    <style>
+        body {
+            background-color: rgb(204, 212, 179);
+            margin: 0;
+            padding: 0;
+        }
+
+        .Header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        h1 {
+            width: 100%;
+            background-color: rgb(180, 185, 167);
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+            h1.Logo {
+                text-align: center;
+            }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: rgb(27, 172, 240);
+                }
+
+        .active {
+            background-color: #0ec582;
+        }
+
+        .content {
+            display: block;
+            margin-top: 120px;
+            margin-bottom: 110px;
+        }
+
+        .Footer {
+            background-color: rgb(180, 185, 167);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .Copyrights {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="LogoDiv">
+            <h1 class="Logo">Online Exam System</h1>
+        </div>
+        <div class="Menu">
+            <ul>
+                <li><a asp-action="AddQuestions" asp-controller="Administrator">Add Question</a></li>
+                <li><a asp-action="ViewQuestion" asp-controller="Administrator">View Question</a></li>
+                <li><a asp-action="DeleteQuestions" asp-controller="Administrator">Delete Questions</a></li>
+                <li><a asp-action="ModifyQuestions" asp-controller="Administrator">Modify Questions</a></li>
+                <li><a asp-action="SetQuestionPaper" asp-controller="Administrator">Set Question Paper</a></li>
+                <li><a asp-action="ViewQuestionPaper" asp-controller="Administrator">View Question Paper</a></li>
+                <li><a asp-action="GenerateReport" asp-controller="Administrator">Generate Report</a></li>
+                <li><a asp-action="SearchExamInfo" asp-controller="Administrator">Search Exam Info</a></li>
+                <li style="float:right"><a asp-action="" asp-controller="Administrator">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+       @RenderBody()
+    </div>
+    <div class="Footer">
+        <h6 class="Copyrights" style="text-align: center;font-size: large;"><b>&copy;Copyrights Reserves</b>Team55-Yogesh Kumar</h6>
+    </div>
+</body>
+</html>
