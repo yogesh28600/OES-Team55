@@ -53,17 +53,41 @@ namespace OnlineExamSystem.Controllers
             con.Close();           
             return View(questions);
         }
-
-        public IActionResult PostDeleteQuestion(string QID)
+        [HttpPost]
+        public IActionResult PostDeleteQuestion(int QID)
         {
             SqlConnection con = new SqlConnection(@"Server=YOGESHKUMAR\SQLEXPRESS;Initial Catalog=OnlineExamSystem;Integrated Security=SSPI;");
             con.Open();
             SqlCommand cmd = new SqlCommand("delete from Question where QuestionID=@ID", con);
-            cmd.Parameters.AddWithValue("@ID", int.Parse(QID)); 
+            cmd.Parameters.AddWithValue("@ID", QID); 
             int IsAffected=cmd.ExecuteNonQuery();
             ViewBag.IsAffected = IsAffected;
             con.Close();
             return View();
+        }
+        [HttpPost]
+        public IActionResult PostSetQuestionPaper()
+        {
+            SqlConnection con = new SqlConnection(@"Server=YOGESHKUMAR\SQLEXPRESS;Initial Catalog=OnlineExamSystem;Integrated Security=SSPI;");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from Question", con);
+            SqlDataReader question = cmd.ExecuteReader();
+            Questions questions = new Questions();
+            List<Questions> QList=new List<Questions>();
+            while(question.Read())
+            {
+                questions.QuestionId = int.Parse(question[0].ToString());
+                questions.Question = question[1].ToString();
+                questions.OptionA = question[2].ToString();
+                questions.OptionB = question[3].ToString();
+                questions.OptionC = question[4].ToString();
+                questions.OptionD = question[5].ToString();
+                questions.AnswerKey = question[6].ToString();
+                questions.DifficultyLevel = question[7].ToString();
+                QList.Add(questions);
+            }
+            con.Close();
+            return View(QList);
         }
 
         public IActionResult AddQuestions()
@@ -87,7 +111,31 @@ namespace OnlineExamSystem.Controllers
         }
         public IActionResult SetQuestionPaper()
         {
-            return View();
+            SqlConnection con = new SqlConnection(@"Server=YOGESHKUMAR\SQLEXPRESS;Initial Catalog=OnlineExamSystem;Integrated Security=SSPI;");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from Question", con);
+            SqlDataReader question = cmd.ExecuteReader();
+
+            List<Questions> QList = new List<Questions>();
+            if(question.HasRows)
+            {
+                while (question.Read())
+                {
+                    Questions questions = new Questions();
+                    questions.QuestionId = int.Parse(question[0].ToString());
+                    questions.Question = question[1].ToString();
+                    questions.OptionA = question[2].ToString();
+                    questions.OptionB = question[3].ToString();
+                    questions.OptionC = question[4].ToString();
+                    questions.OptionD = question[5].ToString();
+                    questions.AnswerKey = question[6].ToString();
+                    questions.DifficultyLevel = question[7].ToString();
+                    QList.Add(questions);
+                }
+
+            }
+            con.Close();
+            return View(QList);
         }
         public IActionResult ViewQuestionPaper()
         {

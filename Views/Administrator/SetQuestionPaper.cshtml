@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<OnlineExamSystem.Models.Questions>
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <html>
@@ -7,8 +8,19 @@
     </head>
     <body>
         <div>
-            <!--This can be same as the delete page-->
-            <h2 style="text-align:center">Set Question Paper Here!!!!!</h2>
+            <!--This page should display one question-->
+            <h2 style="text-align:center">Set Question Here!!!!!</h2><br />
+            @foreach(var question in Model)
+            {
+                        <div>@question.QuestionId</div>
+                        <div>@question.Question</div>
+                        <div>@question.OptionA</div>
+                        <div>@question.OptionB</div>
+                        <div>@question.OptionC</div>
+                        <div>@question.OptionD</div>
+                        <div>@question.AnswerKey</div>
+                        <div>@question.DifficultyLevel</div>
+            }
         </div>
     </body>
 </html>
