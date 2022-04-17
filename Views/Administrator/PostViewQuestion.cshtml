@@ -1,0 +1,23 @@
+﻿@model OnlineExamSystem.Models.Questions;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+    <head>
+        <title>View Question</title>
+    </head>
+    <body>
+        <div>
+            @Model.QuestionId:@Model.Question<br />
+            A: @Model.OptionA<br />
+            B: @Model.OptionB<br />
+            C: @Model.OptionC<br />
+            D: @Model.OptionD<br />
+            Correct Answer:<br />
+            @Model.AnswerKey<br />
+            Difficulty level: @Model.DifficultyLevel
+
+        </div>
+    </body>
+</html>

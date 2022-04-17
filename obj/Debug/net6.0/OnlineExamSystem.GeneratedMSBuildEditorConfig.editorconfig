@@ -31,8 +31,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxNb2RpZnlRdWVzdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/PostAddQuestion.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxQb3N0QWRkUXVlc3Rpb24uY3NodG1s
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/PostDeleteQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxQb3N0RGVsZXRlUXVlc3Rpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/PostViewQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxQb3N0Vmlld1F1ZXN0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [Y:/CAPSTONE_PROJECT/OnlineExamSystem/Views/Administrator/SearchExamInfo.cshtml]

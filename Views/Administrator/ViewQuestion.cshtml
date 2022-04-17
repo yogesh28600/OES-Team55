@@ -8,7 +8,13 @@
     <body>
         <div>
             <!--This page should display one question-->
-            <h2 style="text-align:center">View Question Here!!!!!</h2>
+            <h2 style="text-align:center">View Question Here!!!!!</h2><br />
+            @using (Html.BeginForm("PostViewQuestion","Administrator"))
+            {
+                <label>Enter Question ID</label>
+                <input type="text" name="QID" />
+                <input type="submit" name="ADD" value="Search" />
+            }
         </div>
     </body>
 </html>

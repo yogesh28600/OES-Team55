@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+    <head>
+        <title>OES</title>
+    </head>
+    <body>
+        <div>
+        @{
+            if(@ViewBag.IsAffected>0)
+            {
+                <h1>Deleted..............</h1>
+            }
+            else
+            {
+                <h1>Question Not Found</h1>
+            }
+        }
+        </div>
+    </body>
+</html>

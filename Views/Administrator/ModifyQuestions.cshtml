@@ -7,9 +7,14 @@
     </head>
     <body>
         <div>
-            <!--Sanchitha Guptha's Task is to desing the page for respected function -->
-            <!--In this Page the admin should be able to modify the MCQ question,It Should have search bar to search for question to be modified, It should Display the existing question and below that text box should be there to modify the question-->
-            <h2 style="text-align:center">Modify Question Here!!!!!</h2>
+            <!--This page should display one question-->
+            <h2 style="text-align:center">View Question Here!!!!!</h2><br />
+            @using (Html.BeginForm("PostDeleteQuestion","Administrator"))
+            {
+                <label>Enter Question ID</label>
+                <input type="text" name="QID" />
+                <input type="submit" name="ADD" value="Delete" />
+            }
         </div>
     </body>
 </html>
